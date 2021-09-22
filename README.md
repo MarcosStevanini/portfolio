@@ -6,4 +6,4 @@
 
 - Mobile
 
-<img alt="Mobile" width="100%" src="./src/img/mobile.png">
+<img alt="Mobile" width="30%" src="./src/img/mobile.png">
