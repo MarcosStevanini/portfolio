@@ -1,0 +1,169 @@
+@import "../../index.scss";
+
+.home {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  color: #fff;
+
+  @include media(md, max) {
+    flex-direction: column;
+    // text-align: center;
+  }
+
+  .homeImg {
+    img {
+      width: 300px;
+      border-radius: 1% 50% 50% 50%;
+      margin-right: 50px;
+      filter: grayscale(100%);
+
+      @include media(md, max) {
+        margin-right: 0;
+      }
+    }
+  }
+  .homeContent {
+    line-height: 0;
+    color: #ccc;
+
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;700&display=swap");
+    font-family: "Poppins", sans-serif;
+
+    p {
+      font-weight: 500;
+
+      span {
+        font-weight: 300;
+      }
+      .linhaMobile {
+        display: none;
+      }
+      @include media(md, max) {
+        line-height: initial;
+
+        .linhaMobile {
+          display: inline;
+        }
+      }
+    }
+
+    h1 {
+      color: #ccc;
+      font-size: 100px;
+      text-transform: uppercase;
+
+      span {
+        color: #4700fe;
+      }
+
+      @include media(md, max) {
+        font-size: 50px;
+      }
+    }
+
+    h2 {
+      color: #ccc;
+      font-size: 59px;
+      text-transform: uppercase;
+
+      @include media(md, max) {
+        font-size: 37px;
+      }
+    }
+    .text {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: -35px;
+
+      @include media(md, max) {
+        margin-top: -20px;
+      }
+
+      .rotateText {
+        transform: rotate(270deg);
+        font-size: 31px;
+        margin-right: -34px;
+
+        @include media(md, max) {
+          font-size: 18px;
+          margin-right: -22px;
+        }
+      }
+    }
+  }
+  .linkButton {
+    color: #ccc;
+    text-decoration: none;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding: 7px 20px;
+    @include transition;
+
+    &:hover {
+      color: #151515;
+      background: #ccc;
+    }
+
+    @include media(md, max) {
+      margin-top: 25px;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .sass {
+    h2 {
+      position: absolute;
+      top: 90px;
+      right: 90px;
+      text-transform: uppercase;
+      color: #ffbcdd;
+      font-size: 30px;
+      transform: rotate(-90deg);
+      opacity: 0.2;
+
+      @include media(md, max) {
+        top: 130px;
+        right: 0;
+      }
+    }
+  }
+  .js {
+    h2 {
+      position: absolute;
+      bottom: 150px;
+      left: 30px;
+      text-transform: uppercase;
+      color: #fff6b8;
+      font-size: 30px;
+      transform: rotate(-90deg);
+      opacity: 0.2;
+
+      @include media(md, max) {
+        bottom: 90px;
+        left: -70px;
+      }
+    }
+  }
+  .typescript {
+    h2 {
+      position: absolute;
+      top: 90px;
+      left: 30px;
+      text-transform: uppercase;
+      color: #8fd2ff;
+      font-size: 30px;
+      opacity: 0.2;
+
+      @include media(md, max) {
+        top: 30px;
+      }
+    }
+  }
+}

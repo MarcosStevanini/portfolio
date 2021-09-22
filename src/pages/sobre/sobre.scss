@@ -1,0 +1,60 @@
+@import "../../index.scss";
+
+.sobre {
+  color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include media(md, max) {
+    display: block;
+  }
+  .Section {
+    h2 {
+      text-align: center;
+    }
+  }
+  .sobreImg {
+    img {
+      width: 300px;
+      margin: 0 50px;
+      border-radius: 23.3%;
+      box-shadow: -8px 8px 1px 3px #4700fe;
+
+      @include media(md, max) {
+        margin: 0;
+        width: 100%;
+      }
+    }
+  }
+
+  .sobreText {
+    text-align: justify;
+    max-width: 800px;
+
+    h2 {
+      color: #4700fe;
+      font-size: 30px;
+    }
+    h2,
+    p {
+      max-width: 500px;
+    }
+
+    .text-sobre {
+      max-width: 500px;
+      text-align: right;
+      text-align: justify;
+      margin-left: 300px;
+
+      span {
+        font-weight: 500;
+      }
+
+      @include media(md, max) {
+        margin-left: initial;
+        max-width: initial;
+      }
+    }
+  }
+}
