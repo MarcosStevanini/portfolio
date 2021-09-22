@@ -1,5 +1,9 @@
 # Protfolio Marcos Stevanini
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- Desktop
 
-# <img alt="YAP" src="./src/img/logo.svg">
+# <img alt="Desktop" src="./src/img/desktop.png">
+
+- Mobile
+
+# <img alt="Mobile" src="./src/img/mobile.png">
